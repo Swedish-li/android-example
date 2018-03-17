@@ -11,6 +11,24 @@
         android:text="Button 1" />
 
     <Button
+        android:id="@+id/button_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显式intent" />
+
+    <Button
+        android:id="@+id/button_intent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式intent" />
+
+    <Button
+        android:id="@+id/button_intent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="web view" />
+
+    <Button
         android:id="@+id/destory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
