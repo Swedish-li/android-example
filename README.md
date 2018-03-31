@@ -1,5 +1,7 @@
 # Android 学习
 
+1. [Android：Activity——生命周期深入详解][1]
+
 ### 日志记录
 使用android monitor device 可以监控日志，控制台输出等
 
@@ -30,3 +32,6 @@ public class MainActivity {
 }
 
 ```
+
+
+[1]: https://blog.csdn.net/woshimalingyi/article/details/50961380        "Android：Activity——生命周期深入详解"
