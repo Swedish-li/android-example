@@ -8,29 +8,29 @@
         android:id="@+id/text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/hello"
         android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        android:text="Hello Android!"/>
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="placeholder"
-        android:maxLines="3"/>
+        android:hint="@string/msg"
+        android:maxLines="3" />
 
     <Button
         android:id="@+id/button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="Show" />
+        android:text="@string/show"
+        android:textAllCaps="false" />
 
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
 </LinearLayout>

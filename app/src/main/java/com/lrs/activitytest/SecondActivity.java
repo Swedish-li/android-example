@@ -25,12 +25,10 @@ public class SecondActivity extends AppCompatActivity {
         this.editText = findViewById(R.id.edit_text);
 
         Button button = findViewById(R.id.button_2);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String input = editText.getText().toString();
-                Toast.makeText(SecondActivity.this,input,Toast.LENGTH_SHORT).show();
-            }
-        });
+        button.setOnClickListener((View v) -> {
+                    String input = editText.getText().toString();
+                    Toast.makeText(SecondActivity.this, input, Toast.LENGTH_SHORT).show();
+                }
+        );
     }
 }
