@@ -48,13 +48,6 @@ public class FirstActivity extends AppCompatActivity {
                 }
         );
 
-        button.setOnClickListener((View v) -> {
-                    Toast.makeText(FirstActivity.this,
-                            "You click this button!",
-                            Toast.LENGTH_SHORT).show();
-                }
-        );
-
         Button buttonIntent = findViewById(R.id.button_intent);
         buttonIntent.setOnClickListener((View v) -> {
                     // 显式intent

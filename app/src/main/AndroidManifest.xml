@@ -18,13 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity">
+        <!-- singleTop : 每次启动，使用栈顶的实例，如果栈顶不存在，重新创建实例-->
+        <activity
+            android:name=".SecondActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="com.lrs.activitytest.ACTION_START" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.lrs.activitytest.MY_CATEGORY" />
             </intent-filter>
+
+
+
         </activity>
     </application>
 
