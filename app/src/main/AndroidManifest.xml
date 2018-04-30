@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lrs.activitytest">
+    package="com.lrs.activity">
+    <!-- 声明app权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivity">
+        <activity android:name="com.lrs.activity.FirstActivity">
 
             <!-- 设置此活动为主活动 -->
             <intent-filter>
@@ -18,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- singleTop : 每次启动，使用栈顶的实例，如果栈顶不存在，重新创建实例-->
+        <!-- singleTop : 每次启动，使用栈顶的实例，如果栈顶不存在，重新创建实例 -->
         <activity
-            android:name=".SecondActivity"
+            android:name="com.lrs.activity.SecondActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="com.lrs.activitytest.ACTION_START" />
@@ -28,10 +30,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.lrs.activitytest.MY_CATEGORY" />
             </intent-filter>
-
-
-
         </activity>
+        <activity
+            android:name="com.lrs.activity.ProvinceActivity"
+            android:label="@string/title_activity_province"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

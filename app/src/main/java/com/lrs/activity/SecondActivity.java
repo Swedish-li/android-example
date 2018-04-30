@@ -1,4 +1,4 @@
-package com.lrs.activitytest;
+package com.lrs.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

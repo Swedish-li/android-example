@@ -3,4 +3,6 @@
     <string name="hello">Hello Android!</string>
     <string name="show">显示</string>
     <string name="msg">Place Holder</string>
+    <string name="title_activity_province">省份列表</string>
+    <string name="query_provice">省份数据更新</string>
 </resources>

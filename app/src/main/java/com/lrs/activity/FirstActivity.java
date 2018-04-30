@@ -1,4 +1,4 @@
-package com.lrs.activitytest;
+package com.lrs.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -26,6 +26,7 @@ public class FirstActivity extends AppCompatActivity {
 
         return true;
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -74,6 +75,13 @@ public class FirstActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                 );
+
+        findViewById(R.id.list_view)
+                .setOnClickListener(view -> {
+                    Intent intent = new Intent(FirstActivity.this, ProvinceActivity.class);
+                    startActivity(intent);
+                });
+
 
         // activity 销毁
         Button destoryButton = findViewById(R.id.destory);

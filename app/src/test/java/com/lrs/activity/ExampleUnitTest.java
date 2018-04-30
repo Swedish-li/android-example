@@ -1,4 +1,4 @@
-package com.lrs.activitytest;
+package com.lrs.activity;
 
 import org.junit.Test;
 
